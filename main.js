@@ -42,12 +42,12 @@ function homeworld(data){
     .then(response => response.json())
     .then(data => {
         let homeworld = data
-        let HomeHtml = `<p>Homeworld</p><ul>`
+        let WorldHtml = `<p>Homeworld _.</p><ul>`
         for (let i in homeworld){
-            HomeHtml += `<li>${i}: ${homeworld[i]}</li>`
+            WorldHtml += `<li>${i}: ${homeworld[i]}</li>`
         }
-        document.getElementById('people1').innerHTML = HomeHtml
+        document.getElementById('people1').innerHTML = WorldHtml
     })
-    .catch(error => console.error('Error fetching Homeworld:',error))
+    .catch(error => console.error('Error mi pana:',error))
 }
 homeworld()
